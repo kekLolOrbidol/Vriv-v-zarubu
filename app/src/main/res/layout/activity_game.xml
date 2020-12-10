@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+                name="vm"
+                type="com.adt.game_of_life.viewmodel.GameViewModel"/>
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/gameRootView"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".view.activity.GameActivity">
+
+        <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/gameImageView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/stepButton"/>
+
+        <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/stepButton"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/game_button_height"
+                android:layout_margin="@dimen/game_button_margin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/speedButton"
+                style="@style/gameButtonStyle"
+                app:srcCompat="@drawable/ic_chevron_right_white_24dp"
+                android:onClick="@{() -> vm.step()}"/>
+
+        <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/speedButton"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/game_button_height"
+                android:layout_margin="@dimen/game_button_margin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/stepButton"
+                app:layout_constraintEnd_toStartOf="@id/swapImageView"
+                app:srcCompat="@drawable/ic_directions_run_white_24dp"
+                style="@style/gameButtonStyle"/>
+
+        <abak.tr.com.boxedverticalseekbar.BoxedVertical
+                android:id="@+id/speedSeekBar"
+                android:layout_width="@dimen/speed_seek_bar_width"
+                android:layout_height="@dimen/speed_seek_bar_height"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/standard_margin"
+                app:backgroundColor="@color/colorPrimary"
+                app:progressColor="@color/colorAccent"
+                app:textColor="@color/white"
+                app:max="200"
+                app:step="1"
+                app:textBottomPadding="20"
+                app:textSize="12sp"
+                app:touchDisabled="true"
+                app:layout_constraintBottom_toTopOf="@id/speedButton"
+                app:layout_constraintStart_toStartOf="@id/speedButton"
+                app:layout_constraintEnd_toEndOf="@id/speedButton"
+                android:visibility="invisible"
+                tools:visibility="visible"/>
+
+        <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/swapImageView"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/game_button_height"
+                android:layout_margin="@dimen/game_button_margin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/speedButton"
+                app:layout_constraintEnd_toStartOf="@id/clearButton"
+                style="@style/gameButtonStyle"
+                app:srcCompat="@drawable/ic_create_white_24dp"
+                android:onClick="@{() -> vm.switchInputMode()}"/>
+
+        <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/clearButton"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/game_button_height"
+                android:layout_margin="@dimen/game_button_margin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/swapImageView"
+                app:layout_constraintEnd_toStartOf="@id/randomizeButton"
+                style="@style/gameButtonStyle"
+                app:srcCompat="@drawable/ic_clear_white_24dp"
+                android:onClick="@{() -> vm.clear()}"/>
+
+        <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/randomizeButton"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/game_button_height"
+                android:layout_margin="@dimen/game_button_margin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/clearButton"
+                app:layout_constraintEnd_toEndOf="@id/saveButton"
+                style="@style/gameButtonStyle"
+                app:srcCompat="@drawable/ic_refresh_white_24dp"
+                android:onClick="@{() -> vm.randomize()}"/>
+
+        <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/saveButton"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/game_button_height"
+                android:layout_margin="@dimen/game_button_margin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/randomizeButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                style="@style/gameButtonStyle"
+                app:srcCompat="@drawable/ic_save_white_24dp"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

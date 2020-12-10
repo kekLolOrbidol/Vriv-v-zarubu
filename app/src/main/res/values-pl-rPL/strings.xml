@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Врывaйся в зарyбy</string>
+    <string name="game_activity_title">Gra</string>
+    <string name="menu_activity_title">Menu</string>
+    <string name="load_button_text">WCZYTAJ</string>
+    <string name="load_activity_title">Wczytaj</string>
+    <string name="settings_activity_title">Ustawienia</string>
+    <string name="settings_button_text">USTAWIENIA</string>
+    <string name="about_activity_title">O Aplikacji</string>
+    <string name="about_button_text">O APLIKACJI</string>
+    <string name="born_settings_text">Zasady życia</string>
+    <string name="dead_settings_text">Zasady śmierci</string>
+    <string name="alive_color_settings_text">Kolor żywych</string>
+    <string name="dead_color_settings_text">Kolor martwych</string>
+    <string name="dead_color_settings_description">Ustaw kolor martwej komórki</string>
+    <string name="alive_color_settings_description">Ustaw kolor żywej komórki</string>
+    <string name="born_settings_description">Jak wiele sąsiadów potrzebnych, aby narodziła się komórka.</string>
+    <string name="dead_settings_description">Jak wiele sąsiadów potrzebnych aby umarła komórka.</string>
+    <string name="dialog_choose_color_header">Wybierz kolor</string>
+    <string name="dialog_ok_button">ok</string>
+    <string name="dialog_cancel_button">Anuluj</string>
+    <string name="authors_text">Autorzy:\nArtur Bednarczyk\nDawid Grajewski\nTomasz Januszek</string>
+    <string name="filename_taken_or_empty">Nazwa pliku jest już użyta, lub jest pusta</string>
+    <string name="dialog_save_message">Nazwij swój zapis</string>
+    <string name="dialog_delete_title">Usuń</string>
+    <string name="dialog_delete_message">Zapis zostanie usunięty na stałe</string>
+    <string name="dialog_load_title">Wczytaj</string>
+    <string name="dialog_load_message">Aktualny stan zostanie nadpisany</string>
+    <string name="dialog_save_title">Zapis</string>
+    <string name="save_deleted">Zapis usunięty</string>
+    <string name="save_loaded">Zapis wczytany</string>
+    <string name="save_saved">Stan zapisany</string>
+    <string name="storage_permission_required">Wymagane uprawnienia dostępu do danych</string>
+    <string name="width_settings_text">Szerokość planszy</string>
+    <string name="width_settings_description">Liczba komórek w wierszu</string>
+    <string name="height_settings_text">Wysokość planszy</string>
+    <string name="height_settings_description">Liczba komórek w kolumnie</string>
+    <string name="about_text">To jest nasza interpretacja Gry w Życie Conwaya.\n\nGra w Życie, znana również jako Życie
+        (ang. Life), jest automatem komórkowym wymyślonym przez Johna Hortona Conwaya w 1970.\n\nStan gry jest ustalony
+        przez stan początkowy, co powoduje, że jedyna interakcja gracza to utworzenie początkowej konfiguracji.
+        Następnie pozostaje obserwować ewolucje systemu komórkowego. Bardziej zaawansowany gracz, może tworzyć wzory o
+        określonych właściwościach.\n
+    </string>
+    <string name="application_main_splash_screen_description">Ekran wczytywania aplikacji</string>
+    <string name="play_button_text">GRAJ</string>
+</resources>

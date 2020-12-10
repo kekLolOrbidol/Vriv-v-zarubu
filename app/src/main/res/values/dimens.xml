@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="standard_margin">8dp</dimen>
+    <dimen name="big_margin">32dp</dimen>
+
+    <dimen name="default_button_text_size">30sp</dimen>
+    <dimen name="number_picker_text_margin">12dp</dimen>
+
+    <dimen name="game_button_height">60dp</dimen>
+    <dimen name="game_button_margin">1dp</dimen>
+
+    <dimen name="speed_seek_bar_width">30dp</dimen>
+    <dimen name="speed_seek_bar_height">200dp</dimen>
+
+    <dimen name="snackbar_text_size">18sp</dimen>
+</resources>

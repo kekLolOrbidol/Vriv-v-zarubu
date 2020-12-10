@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <CheckBox
+            android:id="@+id/firstCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/secondCheckBox"
+            android:saveEnabled="false"/>
+
+    <CheckBox
+            android:id="@+id/secondCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/firstCheckBox"
+            app:layout_constraintEnd_toStartOf="@id/thirdCheckBox"
+            android:saveEnabled="false"/>
+
+    <CheckBox
+            android:id="@+id/thirdCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/secondCheckBox"
+            app:layout_constraintEnd_toStartOf="@id/fourthCheckBox"
+            android:saveEnabled="false"/>
+
+    <CheckBox
+            android:id="@+id/fourthCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/thirdCheckBox"
+            app:layout_constraintEnd_toStartOf="@id/fifthCheckBox"
+            android:saveEnabled="false"/>
+
+
+    <CheckBox
+            android:id="@+id/fifthCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/fourthCheckBox"
+            app:layout_constraintEnd_toStartOf="@id/sixthCheckBox"
+            android:saveEnabled="false"
+    />
+
+    <CheckBox
+            android:id="@+id/sixthCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/fifthCheckBox"
+            app:layout_constraintEnd_toStartOf="@id/seventhCheckBox"
+            android:saveEnabled="false"/>
+
+
+    <CheckBox
+            android:id="@+id/seventhCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/sixthCheckBox"
+            app:layout_constraintEnd_toStartOf="@id/eightCheckBox"
+            android:saveEnabled="false"/>
+
+
+    <CheckBox
+            android:id="@+id/eightCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/seventhCheckBox"
+            app:layout_constraintEnd_toStartOf="@id/ninthCheckBox"
+            android:saveEnabled="false"/>
+
+
+    <CheckBox
+            android:id="@+id/ninthCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/eightCheckBox"
+            android:saveEnabled="false"/>
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/firstCheckBox"
+            android:layout_marginLeft="@dimen/number_picker_text_margin"
+            android:layout_marginStart="@dimen/number_picker_text_margin"
+            app:layout_constraintTop_toBottomOf="@id/firstCheckBox"
+            style="@style/numberSelectTextStyle"
+            android:text="0"/>
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/number_picker_text_margin"
+            android:layout_marginStart="@dimen/number_picker_text_margin"
+            app:layout_constraintStart_toStartOf="@id/secondCheckBox"
+            app:layout_constraintTop_toBottomOf="@id/secondCheckBox"
+            style="@style/numberSelectTextStyle"
+            android:text="1"/>
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/number_picker_text_margin"
+            android:layout_marginStart="@dimen/number_picker_text_margin"
+            app:layout_constraintStart_toStartOf="@id/thirdCheckBox"
+            app:layout_constraintTop_toBottomOf="@id/thirdCheckBox"
+            style="@style/numberSelectTextStyle"
+            android:text="2"/>
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/number_picker_text_margin"
+            android:layout_marginStart="@dimen/number_picker_text_margin"
+            app:layout_constraintStart_toStartOf="@id/fourthCheckBox"
+            app:layout_constraintTop_toBottomOf="@id/fourthCheckBox"
+            style="@style/numberSelectTextStyle"
+            android:text="3"/>
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/number_picker_text_margin"
+            android:layout_marginStart="@dimen/number_picker_text_margin"
+            app:layout_constraintStart_toStartOf="@id/fifthCheckBox"
+            app:layout_constraintTop_toBottomOf="@id/fifthCheckBox"
+            style="@style/numberSelectTextStyle"
+            android:text="4"/>
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/number_picker_text_margin"
+            android:layout_marginStart="@dimen/number_picker_text_margin"
+            app:layout_constraintStart_toStartOf="@id/sixthCheckBox"
+            app:layout_constraintTop_toBottomOf="@id/sixthCheckBox"
+            style="@style/numberSelectTextStyle"
+            android:text="5"/>
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/number_picker_text_margin"
+            android:layout_marginStart="@dimen/number_picker_text_margin"
+            app:layout_constraintStart_toStartOf="@id/seventhCheckBox"
+            app:layout_constraintTop_toBottomOf="@id/seventhCheckBox"
+            style="@style/numberSelectTextStyle"
+            android:text="6"/>
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/number_picker_text_margin"
+            android:layout_marginStart="@dimen/number_picker_text_margin"
+            app:layout_constraintStart_toStartOf="@id/eightCheckBox"
+            app:layout_constraintTop_toBottomOf="@id/eightCheckBox"
+            style="@style/numberSelectTextStyle"
+            android:text="7"/>
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/number_picker_text_margin"
+            android:layout_marginStart="@dimen/number_picker_text_margin"
+            app:layout_constraintStart_toStartOf="@id/ninthCheckBox"
+            app:layout_constraintTop_toBottomOf="@id/ninthCheckBox"
+            style="@style/numberSelectTextStyle"
+            android:text="8"/>
+
+</android.support.constraint.ConstraintLayout>

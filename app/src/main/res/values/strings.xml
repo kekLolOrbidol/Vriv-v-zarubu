@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Врывaйся в зарyбу</string>
+    <string name="play_button_text">PLAY</string>
+    <string name="game_activity_title">Game</string>
+    <string name="menu_activity_title">Menu</string>
+    <string name="load_button_text">LOAD</string>
+    <string name="load_activity_title">Load</string>
+    <string name="settings_activity_title">Settings</string>
+    <string name="settings_button_text">SETTINGS</string>
+    <string name="about_activity_title">About</string>
+    <string name="about_button_text">ABOUT</string>
+    <string name="application_main_splash_screen_description">Application main splash screen</string>
+    <string name="born_settings_text">Birth rules</string>
+    <string name="dead_settings_text">Dying rules</string>
+    <string name="alive_color_settings_text">Alive color</string>
+    <string name="dead_color_settings_text">Dead color</string>
+    <string name="dead_color_settings_description">Set the color of the dead cell.</string>
+    <string name="alive_color_settings_description">Set the color of alive cell.</string>
+    <string name="born_settings_description">How meny neighbours needed for dead cell to become alive.</string>
+    <string name="dead_settings_description">How many neighbours needed for alive cell to die.</string>
+    <string name="dialog_choose_color_header">Choose color</string>
+    <string name="dialog_ok_button">ok</string>
+    <string name="dialog_cancel_button">cancel</string>
+    <string name="about_text">This is our interpretation of Conway\'s Game of Life.\n\nThe Game of Life, also known
+        simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.\n\nThe
+        game is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further
+        input. One interacts with the Game of Life by creating an initial configuration and observing how it evolves,
+        or, for advanced players, by creating patterns with particular properties.\n
+    </string>
+    <string name="authors_text">Authors:\nArtur Bednarczyk\nDawid Grajewski\nTomasz Januszek</string>
+    <string name="filename_taken_or_empty">Filename is already taken or empty</string>
+    <string name="dialog_save_message">Name your save file</string>
+    <string name="dialog_delete_title">Delete</string>
+    <string name="dialog_delete_message">Save will be removed permanently</string>
+    <string name="dialog_load_title">Load</string>
+    <string name="dialog_load_message">Current state will be overwritten</string>
+    <string name="dialog_save_title">Save</string>
+    <string name="save_deleted">Save successfully removed</string>
+    <string name="save_loaded">Save successfully loaded</string>
+    <string name="save_saved">State successfully saved</string>
+    <string name="storage_permission_required">Storage permission is required</string>
+    <string name="width_settings_text">Board width</string>
+    <string name="width_settings_description">Number of cells in a row</string>
+    <string name="height_settings_text">Board height</string>
+    <string name="height_settings_description">Number of cells in a column</string>
+</resources>
